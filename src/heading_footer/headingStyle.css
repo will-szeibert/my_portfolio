@@ -1,0 +1,21 @@
+.navbar-container{
+    background:var(--main);
+    padding:1rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button{
+    margin:0 2rem;
+}
+
+.sidemenu-btn{display:none;}
+
+@media only screen and (max-width: 700px) {
+    .sidemenu-btn {
+      display:block;
+    }
+
+    nav{display:none;}
+  }
