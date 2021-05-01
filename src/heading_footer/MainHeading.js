@@ -1,10 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
 import './headingStyle.css'
+import { AppProvider } from './headingContext'
+
 const MainHeading = () => {
     return (
         <div>
-            <Navbar />
+            <AppProvider>
+                <Navbar />
+                
+            </AppProvider>
+            
         </div>
     )
 }

@@ -8,9 +8,13 @@
 
 nav button{
     margin:0 2rem;
+    font-size: 1rem;
 }
 
 .sidemenu-btn{display:none;}
+
+
+
 
 @media only screen and (max-width: 700px) {
     .sidemenu-btn {
@@ -18,4 +22,18 @@ nav button{
     }
 
     nav{display:none;}
-  }
+}
+
+/*=====
+SUBMENU
+======*/
+
+.submenu-container{
+    display:none;
+    background:pink;
+    position:absolute;
+}
+
+.show{
+    display:block;
+}
