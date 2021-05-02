@@ -9,11 +9,18 @@
 nav button{
     margin:0 2rem;
     font-size: 1rem;
+    color:var(--d-brown);
 }
 
-.sidemenu-btn{display:none;}
+.sidemenu-btn{
+    display:none;
+    font-size:1.5rem;
+}
 
-
+.logo{
+    text-decoration:none;
+    color:var(--d-brown);
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -30,8 +37,43 @@ SUBMENU
 
 .submenu-container{
     display:none;
-    background:pink;
     position:absolute;
+}
+
+.submenu-cont{
+    text-decoration:none;
+    
+}
+
+.submenu-link{
+    background:var(--light);
+    font-size:0.8rem;
+    color:black;
+    padding:0.5rem;
+}
+
+.submenu-link:hover{
+    background:var(--dark);
+    color:var(--l-brown)
+}
+
+/*=======
+SIDEMENU
+=========*/
+
+
+.sidemenu-container{
+    position:absolute;
+    display:none;
+    top:0;
+    bottom:0;
+    width:100%;
+    background:var(--main);
+}
+
+.sidemenu-close{
+    font-size:1.5rem;
+    margin:1rem;
 }
 
 .show{

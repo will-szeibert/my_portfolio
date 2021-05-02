@@ -2,15 +2,15 @@ export const submenuLinks = [
     {
         main:'Programming',
         links:[
-            {url:'', label:'My portfolio'},
-            {url:'', label:'Just an extra link :)'},
+            {url:'/program', label:'My portfolio'},
+            {url:'/program', label:'Just an extra link :)'},
         ]
     },
     {
         main:'Geology',
         links:[
-            {url:'', label:'My formal training'},
-            {url:'', label:'Just an extra link :)'},
+            {url:'/geology', label:'My formal training'},
+            {url:'/geology', label:'Just an extra link :)'},
         ]
     },
     {

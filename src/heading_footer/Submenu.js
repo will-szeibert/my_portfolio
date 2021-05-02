@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import {useGlobalContext} from './headingContext'
+import {Link} from 'react-router-dom'
 const Submenu = () => {
     const {links:{links}, location:{top, left}, isOpenSubmenu, closeSubmenu} = useGlobalContext()
     const container = useRef(null)
@@ -17,11 +18,9 @@ const Submenu = () => {
             {links.map((link, index)=>{
                 const {label, url} = link
                 return(
-                    
-                    
-                    <div className='submenu-link' key={index} >{label}</div>
-                    
-                    
+                        <Link className='submenu-cont' to={url} key={index}>
+                            <div className='submenu-link'>{label}</div>
+                        </Link>
                 )
             })}
         </div>

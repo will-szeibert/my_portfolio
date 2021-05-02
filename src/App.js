@@ -1,10 +1,27 @@
 import React from 'react'
 import MainHeading from './heading_footer/MainHeading'
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ProgramMain from './programmingLink/ProgramMain';
+import Home from './home/Home';
+import GeologyMain from './geology/GeologyMain';
 function App() {
   return (
     <div >
-      <MainHeading />
+      <Router>
+        <MainHeading />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route path='/program'>
+            <ProgramMain  />
+          </Route>
+          <Route path='/geology'>
+            <GeologyMain />
+          </Route>
+        </Switch>
+      </Router>
+      
     </div>
   );
 }
