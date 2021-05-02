@@ -12,7 +12,6 @@ const Navbar = () => {
         let BTN = e.target.getBoundingClientRect()
         let top = BTN.top + 41
         let left = BTN.left
-        console.log(left)
         openSubmenu(main, {top,left}) 
     }
     return (

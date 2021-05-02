@@ -1,4 +1,103 @@
 .home-container{
-    height:2000px;
-    background:pink;
+    
+}
+
+.home-hero{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background:var(--d-brown);
+}
+/*=================
+    MAINEXPLAINER
+===================*/
+
+.mainExplainer-container{
+    max-width:30%;
+    background:var(--dark);
+    margin:0 2rem;
+}
+
+
+/*=========
+    REEL
+==========*/
+.reel-container{
+    min-width:800px;
+    min-height:427px;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    overflow: hidden;
+    
+}
+
+.reel-item{
+    text-align:center;
+    min-width:800px;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity:0;
+    transition:700ms ease all;
+    background:var(--dark);
+}
+
+.reel-description{
+    background:var(--main);
+    margin: 0 0 0 2rem;
+}
+
+
+.reel-img-container{
+    position:relative;
+}
+
+.reel-item img{
+    height:427px;
+    object-fit: contain;
+    padding:2rem;
+}
+
+.reel-btn{
+    position:absolute;
+    bottom:1rem;
+    left:50%;
+    z-index:1;
+    transform:translateX(-150%);
+
+    background:var(--d-brown);
+}
+
+.reel-btn-right{
+    left:50%;
+    transform:translateX(50%);
+}
+
+
+
+.reel-prev{
+    transform:translateX(-100%);
+}
+
+.reel-active{
+    transform:translateX(0%);
+    opacity:1;
+    
+}
+
+.reel-next{
+    transform:translateX(100%);
+}
+
+@media only screen and (max-width: 1250px) {
+    .home-hero{
+        display:flex;
+        flex-direction:column;
+    }
+    .mainExplainer-container{
+        max-width:100%;
+    }
 }

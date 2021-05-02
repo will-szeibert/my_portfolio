@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import {useGlobalContext} from './headingContext'
 import {Link} from 'react-router-dom'
 const Submenu = () => {
-    const {links:{links}, location:{top, left}, isOpenSubmenu, closeSubmenu} = useGlobalContext()
+    const {links:{links}, location:{top, left}, isOpenSubmenu} = useGlobalContext()
     const container = useRef(null)
 
     useEffect(()=>{
