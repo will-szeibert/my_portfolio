@@ -9,8 +9,8 @@ const Submenu = () => {
         let cont = container.current.style
         cont.top = `${top}px`;
         cont.left = `${left}px`;
-        console.log(cont.left)
-    },[left])
+        
+    },[left]) 
 
 
     return (

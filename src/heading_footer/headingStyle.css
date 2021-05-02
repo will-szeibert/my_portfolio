@@ -76,6 +76,21 @@ SIDEMENU
     margin:1rem;
 }
 
+.sidemenu-nav{
+    text-align: center;
+    
+}
+.sidemenu-ind{
+    margin-top:2rem;
+}
+
+.sidemenu-submenu{
+    color:var(--d-brown);
+}
+.sidemenu-submenu:hover{
+    color:var(--dark)
+}
+
 .show{
     display:block;
 }

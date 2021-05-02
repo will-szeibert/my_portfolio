@@ -12,6 +12,7 @@ const Navbar = () => {
         let BTN = e.target.getBoundingClientRect()
         let top = BTN.top + 41
         let left = BTN.left
+        console.log(left)
         openSubmenu(main, {top,left}) 
     }
     return (
@@ -20,7 +21,7 @@ const Navbar = () => {
             <nav>
                 <button onMouseOver={handleOver}>Programming</button>
                 <button onMouseOver={handleOver}>Geology</button>
-                <button onMouseOver={handleOver}>Extra</button>
+                <button onMouseOver={handleOver}>Shop</button>
             </nav>
             <button onClick={openSidemenu} className='sidemenu-btn'><GiHamburgerMenu /></button>
             <Submenu />

@@ -14,7 +14,7 @@ export const submenuLinks = [
         ]
     },
     {
-        main:'Extra',
+        main:'Shop',
         links:[
             {url:'', label:'Just an extra link :)'},
             {url:'', label:'Just an extra link :)'},
