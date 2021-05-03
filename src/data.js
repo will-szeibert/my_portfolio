@@ -26,7 +26,7 @@ export const ReelItems = [
         image:'https://cdn.pixabay.com/photo/2020/04/22/08/06/dolomites-5076492_1280.jpg',
         id:1,
         descriptionTitle:'picture 1',
-        description:'just some dummy textj djkcd fljdhv dlje vhe;ea  dslkjfdvlb d dljhdfv',
+        description:'just some dummy textj ',
     },
     {
         image:'https://cdn.pixabay.com/photo/2020/04/28/12/40/tulips-5104311_1280.jpg',

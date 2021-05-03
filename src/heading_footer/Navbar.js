@@ -20,7 +20,7 @@ const Navbar = () => {
             <nav>
                 <button onMouseOver={handleOver}>Programming</button>
                 <button onMouseOver={handleOver}>Geology</button>
-                <button onMouseOver={handleOver}>Shop</button>
+                <Link to='/shop'><button onMouseOver={handleOver}>Shop</button></Link>
             </nav>
             <button onClick={openSidemenu} className='sidemenu-btn'><GiHamburgerMenu /></button>
             <Submenu />

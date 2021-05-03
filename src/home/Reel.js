@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {ReelItems} from '../data'
-
+import {IoMdArrowDropleftCircle, IoMdArrowDroprightCircle} from 'react-icons/io'
 const Reel = () => {
     const [reelId, setReelId] = useState(1);
     if(reelId > ReelItems.length){
@@ -42,8 +42,8 @@ const Reel = () => {
                         </div>
                         <div className='reel-img-container'>
                             <img src={image} />
-                            <button className='reel-btn' onClick={()=>setReelId(reelId - 1)}>prev</button>
-                            <button className='reel-btn reel-btn-right' onClick={()=>setReelId(reelId + 1)}>next</button>
+                            <button className='reel-btn' onClick={()=>setReelId(reelId - 1)}><IoMdArrowDropleftCircle /></button>
+                            <button className='reel-btn reel-btn-right' onClick={()=>setReelId(reelId + 1)}><IoMdArrowDroprightCircle /></button>
                         </div>
                         
                     </div>

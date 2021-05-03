@@ -3,7 +3,9 @@ import MainHeading from './heading_footer/MainHeading'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProgramMain from './programmingLink/ProgramMain';
 import Home from './home/Home';
+
 import GeologyMain from './geology/GeologyMain';
+import Shop from './shop/Shop';
 function App() {
   return (
     <div >
@@ -18,6 +20,9 @@ function App() {
           </Route>
           <Route path='/geology'>
             <GeologyMain />
+          </Route>
+          <Route path='/shop'>
+            <Shop />
           </Route>
         </Switch>
       </Router>
