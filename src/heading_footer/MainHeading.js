@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import './headingStyle.css'
 import { AppProvider } from './headingContext'
 import Sidemenu from './Sidemenu'
+import Footer from './Footer'
 
 const MainHeading = () => {
     return (
@@ -10,6 +11,7 @@ const MainHeading = () => {
             <AppProvider>
                 <Navbar />
                 <Sidemenu />
+                <Footer />
             </AppProvider>
             
         </div>

@@ -3,8 +3,10 @@ import {useGlobalContext} from './headingContext'
 import {Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Submenu from './Submenu'
+import Social from '../extras/Social'
 
 const Navbar = () => {
+    const social = 'nav-social'
     const {openSubmenu, closeSubmenu, openSidemenu} = useGlobalContext()
 
     const handleOver = (e)=>{
@@ -24,6 +26,7 @@ const Navbar = () => {
             </nav>
             <button onClick={openSidemenu} className='sidemenu-btn'><GiHamburgerMenu /></button>
             <Submenu />
+            <Social compliment={social} />
         </div>
     )
 }

@@ -4,6 +4,8 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
+    
+
 }
 
 nav button{
@@ -38,6 +40,10 @@ nav button:hover::before{
     color:var(--d-brown);
 }
 
+.nav-social{
+    font-size:1.5rem;
+  }
+
 
 @media only screen and (max-width: 700px) {
     .sidemenu-btn {
@@ -45,6 +51,8 @@ nav button:hover::before{
     }
 
     nav{display:none;}
+
+    .nav-social{display:none;}
 }
 
 /*=====
@@ -102,11 +110,16 @@ SIDEMENU
     margin-top:2rem;
 }
 
-.sidemenu-submenu{
+.sidemenu-submenu p{
     color:var(--d-brown);
 }
-.sidemenu-submenu:hover{
+.sidemenu-submenu p:hover{
     color:var(--dark)
+}
+
+.sidemenu-social{
+    margin-top:2rem;
+    justify-content: center;
 }
 
 .show{

@@ -16,7 +16,7 @@ function App() {
             <Home />
           </Route>
           <Route path='/program'>
-            <ProgramMain  />
+            <ProgramMain  /> 
           </Route>
           <Route path='/geology'>
             <GeologyMain />

@@ -20,4 +20,20 @@ button{
   cursor:pointer;
 }
 
+/*======
+SOCIALS
+=======*/
+
+.socials{
+  font-size:2rem;
+  display:flex;
+  align-items: center;
+  
+}
+
+.socials a{
+  margin: 0 1rem;
+  color:var(--d-brown);
+}
+
 

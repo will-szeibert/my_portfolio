@@ -2,8 +2,11 @@ import React from 'react'
 import {useGlobalContext} from './headingContext'
 import {submenuLinks} from '../data'
 import {Link} from 'react-router-dom'
+import Social from '../extras/Social'
 
 const Sidemenu = () => {
+    const social = 'sidemenu-social'
+
     const {isSidemenuOpen, closeSidemenu} = useGlobalContext()
 
     if(isSidemenuOpen){
@@ -25,14 +28,14 @@ const Sidemenu = () => {
                                 const {url, label} = item;
                                 return(
                                     <Link onClick={closeSidemenu} className='submenu-cont' to={url} key={index}>
-                                        <div className='sidemenu-submenu'>{label}</div>
+                                        <div className='sidemenu-submenu'><p>{label}</p></div>
                                     </Link>
                                 )
                             })}
                         </div>
                     )
                 })}
-                
+                <Social compliment={social} />
             </div>
            
         </div>
