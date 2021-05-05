@@ -36,4 +36,12 @@ SOCIALS
   color:var(--d-brown);
 }
 
+.Button{
+  background:var(--d-brown);
+  padding:0.3rem 2.5rem;
+  color:var(--main)
+}
 
+.Button:hover{
+  background:var(--l-brown);
+}
